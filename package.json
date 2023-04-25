@@ -10,6 +10,7 @@
     "@expo/vector-icons": "^13.0.0",
     "@material-ui/core": "*",
     "@material-ui/icons": "*",
+    "@react-navigation/bottom-tabs": "^6.5.7",
     "@react-navigation/native": "*",
     "@react-navigation/stack": "*",
     "@types/react": "17.0.0",
