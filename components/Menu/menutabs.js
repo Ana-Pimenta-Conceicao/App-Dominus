@@ -115,7 +115,7 @@ export default function Menu() {
 
                             case 'Bicicletas':
 
-                                iconName = ''
+                                iconName = 'list'
 
                                 break;
 
