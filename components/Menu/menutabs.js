@@ -10,11 +10,7 @@ import Icon from 'react-native-vector-icons/FontAwesome5';
 
 
 
-
-
 //import LinearGradient from 'react-native-linear-gradient';
-
-
 
 
 function HomeScreen() {
@@ -100,35 +96,20 @@ export default function Menu() {
 
 
                         switch (route.name) {
-
                             case 'Home':
-
-                                iconName = 'film';
-
+                                iconName = 'home';
+                                  break;
+                                   case 'Violão':
+                                iconName = 'guitar' ;
                                 break;
-
-                            case 'Listar':
-
-                                iconName = 'list';
-
+                            case 'Microfone':
+                                iconName = 'microphone';
                                 break;
-
-                            case 'Bicicletas':
-
-                                iconName = 'list'
-
+                            case 'Bateria':
+                                iconName = 'drum'
                                 break;
-
-                            case 'Ler API':
-
-                                iconName = 'bell';
-
-                                break;
-
                             default:
-
                                 iconName = 'add-circle-outline';
-
                                 break;
 
                         }
@@ -153,20 +134,16 @@ export default function Menu() {
                 }}
 
             >
-
                 <Tab.Screen name="Home" component={HomeScreen} />
 
-                <Tab.Screen name="Listar" component={ListScreen} />
+                <Tab.Screen name="Violão" component={ListScreen} />
 
-                <Tab.Screen
+                <Tab.Screen name="Microfone" component={PostScreen} />
 
-                    name="Bicicletas"
-
-                    component={PostScreen}
-
+                <Tab.Screen name="Bateria" component={NotificationsScreen}
                 />
 
-                <Tab.Screen name="Ler API" component={NotificationsScreen} />
+               
 
             </Tab.Navigator>
 
