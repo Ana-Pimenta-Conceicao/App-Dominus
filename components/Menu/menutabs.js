@@ -25,7 +25,7 @@ function ListScreen() {
 }
 
 function ProdutosScreen() {
-    return <Gerenc />
+    return <GerenciarProdutos />
 }
 
 function NotificationsScreen() {

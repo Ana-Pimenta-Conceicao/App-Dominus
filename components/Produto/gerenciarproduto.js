@@ -27,7 +27,7 @@ export default function GerenciarProdutos() {
 
             <TextInput 
                 placeholder='Marca' 
-                left={<TextInput.Icon icon="sale" />} 
+                left={<TextInput.Icon icon="format-list-bulleted-type" />} 
                 style={styles.input} 
                 onChangeText={(text) => setMarca(text)} 
                 value={marca} 
@@ -35,7 +35,7 @@ export default function GerenciarProdutos() {
 
             <TextInput 
                 placeholder='Preço (R$)' 
-                left={<TextInput.Icon icon="sack" />} 
+                left={<TextInput.Icon icon="cash-multiple" />} 
                 style={styles.input} 
                 onChangeText={(text) => setValor(text)} 
                 value={valor} 
@@ -43,7 +43,7 @@ export default function GerenciarProdutos() {
 
             <TextInput 
                 placeholder='Cor' 
-                left={<TextInput.Icon icon="color" />} 
+                left={<TextInput.Icon icon="invert-colors" />} 
                 style={styles.input} 
                 onChangeText={(text) => setCor(text)} 
                 value={cor} 
@@ -65,7 +65,8 @@ const styles = StyleSheet.create({
         borderColor: '#121212', 
         height: 40, 
         fontSize: 13, 
-        borderRadius: 8 
+        borderRadius: 8,
+        marginBottom: 10
     }, 
 
     separator: { 
