@@ -13,6 +13,7 @@ import 'firebase/compat/database';
 let firebaseConfig = {
   apiKey: "AIzaSyD92kxRftqoXwTj3sdzFiyWQ4BooECsCmo",
   authDomain: "appdominus-4b2f9.firebaseapp.com",
+  databaseURL: "https://appdominus-4b2f9-default-rtdb.firebaseio.com",
   projectId: "appdominus-4b2f9",
   storageBucket: "appdominus-4b2f9.appspot.com",
   messagingSenderId: "308874341737",

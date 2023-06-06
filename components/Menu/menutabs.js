@@ -4,7 +4,7 @@ import { NavigationContainer } from '@react-navigation/native';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import Icon from 'react-native-vector-icons/FontAwesome5';
 import GerenciarProdutos from '../../components/Produto/gerenciarproduto';
-
+import GerenciarPerfil from '../../components/Perfil/perfil'
 //import LinearGradient from 'react-native-linear-gradient';
 
 
@@ -16,12 +16,8 @@ function HomeScreen() {
     );
 }
 
-function ListScreen() {
-    return (
-        <View style={styles.container}>
-            <Text></Text>
-        </View>
-    );
+function PerfilScreen() {
+    return <GerenciarPerfil />
 }
 
 function ProdutosScreen() {
@@ -50,8 +46,8 @@ export default function Menu() {
                             case 'Home':
                                 iconName = 'home';
                                   break;
-                                   case 'Violão':
-                                iconName = 'guitar' ;
+                                   case 'Perfil':
+                                iconName = 'user' ;
                                 break;
                             case 'Microfone':
                                 iconName = 'microphone';
@@ -74,11 +70,8 @@ export default function Menu() {
                 }}>
 
                 <Tab.Screen name="Home" component={HomeScreen} />
-                <Tab.Screen name="Violão" component={ListScreen} />
-                <Tab.Screen 
-                    name="Microfone" 
-                    component={ProdutosScreen} 
-                />
+                <Tab.Screen name="Perfil" component={PerfilScreen} />
+                <Tab.Screen name="Microfone" component={ProdutosScreen} />
                 <Tab.Screen name="Bateria" component={NotificationsScreen}
                 />
 
